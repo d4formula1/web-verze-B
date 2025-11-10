@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ukázkový web – optimalizovaná verze</title>
+  <meta name="description" content="Ukázkový web pro výuku optimalizace: sémantika, přístupnost, rychlost a SEO.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Hlavní navigace">
+        <a href="#" aria-current="page">Domů</a>
+        <a href="#o-nas">O nás</a>
+        <a href="#sluzby">Služby</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="img" aria-label="Ilustrační obrázek stránky">
+    <img src="obrazky/hero_optimized.jpg" alt="Ilustrační grafika" width="1600" height="900" loading="lazy">
+  </section>
+
+  <main class="container">
+    <h1>Hlavní nadpis stránky</h1>
+    <p class="small">Optimalizovaná verze pro rychlé načítání, čitelnost a přístupnost.</p>
+
+    <section id="o-nas" class="card">
+      <h2>O nás</h2>
+      <p>Ukázkový web demonstruje dobré postupy: rozumné styly, komprimované obrázky a jednoznačná tlačítka.</p>
+      <a class="btn" href="#kontakt">Chci kontaktovat</a>
+    </section>
+
+    <section id="sluzby" class="card">
+      <h2>Služby</h2>
+      <ul>
+        <li>Rychlá a přístupná šablona</li>
+        <li>Responzivní layout</li>
+        <li>SEO friendly značení</li>
+      </ul>
+    </section>
+
+    <section id="kontakt" class="card" aria-labelledby="kontakt-nadpis">
+      <h2 id="kontakt-nadpis">Kontaktujte nás</h2>
+      <form action="#" method="post">
+        <label for="name">Jméno</label>
+        <input id="name" name="name" type="text" autocomplete="name" placeholder="Např. Jan Novák" required>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="napr. jan@example.com" required>
+        <button type="submit" class="btn">Odeslat dotaz</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2025 Ukázkový web • <span class="small">Optimalizovaná verze B</span>
+    </div>
+  </footer>
+</body>
+</html>
